@@ -1,0 +1,157 @@
+/*
+	@theme Obsidian
+	@override-placeholders html, xml, sourcecode.js
+*/
+
+@base {
+	color: #e0e2e4;
+	background-color: #293134;
+	insertion-point-color: #e0e2e4;
+	selection-background-color: #5d6b6f;
+	current-line-background-color: #2f393c;
+	spell-check: disabled;
+}
+
+tag, tag > string > punctuation {
+	oldcolor: #509963;
+	lessoldcolor: #71977b;
+	color: #6dbbad;
+}
+
+tag > name, tag > string.quoted - punctuation, attribute-with-value > string.quoted - punctuation {
+	oldcolor: #8cbbad;
+}
+
+tag>name {
+	color: #6dbbad;
+	font-weight: bold;
+}
+
+attribute-name, punctuation.definition.tag {
+	color: #8cbbad;
+	newcolor: #8cbbad;
+}
+
+tag > string.quoted, tag > attribute-with-value > string.quoted {
+	color: #b3b689;
+}
+
+tag > string > punctuation {
+	font-weight: normal;
+}
+
+css.embedded attribute-name, css.embedded punctuation.definition.tag {
+	color: #DF9F4F;
+}
+
+comment, comment>punctuation, tag.doctype, tag.doctype > *, tag.doctype > string.quoted {
+	color: #5c747b;
+	font-weight: normal;
+}
+
+tag.h1, tag.h1 * {
+	font-weight: bold;
+	color: #e0e2e4;
+}
+
+string.quoted-alt {
+	bluecolor: #1a93ae;
+	bluebackground-color: #f4f9fe;
+	color: #1aa1a1;
+}
+
+string.quoted {
+	color: #ff8409;
+}
+
+string.quoted > punctuation {
+	bluecolor: #5ecae9;
+	color: #e69a4c;
+}
+
+string.quoted > escape {
+	font-weight: bold;
+	color: rgba(251,233,173,0.8);
+}
+
+vvariable {
+	color: #7b8c4d;
+}
+
+variable>punctuation {
+	color: #7b8c4d;
+}
+
+operator {
+	color: #e8e2b7;
+}
+
+open-bracket, close-bracket {
+	color: #e8e28f;
+}
+
+support.function, function-call {
+	color: #e0e2e4;
+	font-weight: normal;
+}
+
+identifier.support.function.builtin_functions name, identifier.support.function.string name, identifier.support.function.file name, identifier.object.function.method name  {
+	color: #e0e2e4;
+	font-weight: normal;
+}
+
+keyword.control {
+	color: #72c763;
+}
+
+keyword.control.sql {
+	color: #e69a4c;
+}
+
+delimiter.embedded.source.php.begin, delimiter.embedded.source.php.begin keyword.definition.php, delimiter.embedded.source.php.end {
+	color: #c14fd2;
+}
+
+storage.type {
+	color: #FFF;
+}
+
+function > name {
+	color: #e0e2e4;
+	font-weight: normal;
+}
+
+js.embedded {
+	color: #fff;
+}
+
+styling.css selector.css {
+	color: #6dbbad;
+}
+
+styling.css property-name {
+	color: #72c763;
+}
+
+styling.css property-value {
+	color: #fff;
+}
+
+styling.css keyword.important.css {
+	color: #e69a4c;
+	font-weight: normal;
+}
+
+constant.numeric, constant.language, literal.numeric.decimal.integer {
+	color: #e69a4c;
+	background-color: #293134;
+}
+
+invalid {
+	background-color: #f93232;
+	color: #f9f2ce;
+}
+
+textile > header {
+	font-weight: bold;
+}
