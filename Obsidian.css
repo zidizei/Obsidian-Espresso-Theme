@@ -27,6 +27,19 @@ tag>name {
 	font-weight: bold;
 }
 
+identifier.jQuery.function function.name {
+	color: #6dbbad;
+}
+
+identifier.jQuery operator.jQuery.object {
+	color: #6dbaad;
+	font-weight: bold;
+}
+
+operator.selector.jQuery class.name, operator.selector.jQuery element.name {
+	color: #ffA62B;
+}
+
 attribute-name, punctuation.definition.tag {
 	color: #8cbbad;
 	newcolor: #8cbbad;
@@ -93,6 +106,10 @@ open-bracket, close-bracket {
 support.function, function-call {
 	color: #e0e2e4;
 	font-weight: normal;
+}
+
+support.function.js, storage.type.js {
+	color: #6dbbad;
 }
 
 identifier.support.function.builtin_functions name, identifier.support.function.string name, identifier.support.function.file name, identifier.object.function.method name  {
